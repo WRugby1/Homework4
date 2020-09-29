@@ -23,10 +23,10 @@ THEN I can save my initials and score
 ## Screenshots
 
 Start menu
-<img src = "" alt = "">
+<img src = ".\start screen.jpg" alt = "Save high score screen">
 
 Question deployed
-<img src = "" alt = "">
+<img src = ".\question prompt.jpg" alt = "Question deployed screen">
 
 Save high score
-<img src = "" alt = "">
+<img src = ".\Save high score screen.jpg" alt = "Save high score screen">

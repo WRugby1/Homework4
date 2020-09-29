@@ -10,6 +10,7 @@ var initials = document.querySelector("#initials_input")
 initials.style.display = "none"
 var questionList = document.querySelector(".question-list")
 var timeEl = document.querySelector(".timer")
+timeEl.textContent = "Coding quiz, press start to begin"
 var questionEl = document.querySelector(".question")
 var btn_a = document.createElement("button");
 var btn_b = document.createElement("button");
@@ -141,7 +142,7 @@ function setTime() {
             highScoreButton.style.display = "block"
             questionList.textContent = ""
         }
-        else if (QuestionNum == 10) {
+        else if (QuestionNum === 10) {
             clearInterval(timerInterval);
             timeEl.textContent = ""
         }
@@ -152,7 +153,7 @@ function setTime() {
 startButton.addEventListener("click", function () {
     var listItem = document.createElement("li");
     questionList.appendChild(listItem)
-    btn_a.textContent = "btn_a"
+    // btn_a.textContent = "btn_a"
     //Event listener is option A is selected
     btn_a.addEventListener("click", function () {
         submitButton.disabled = false;
@@ -162,7 +163,7 @@ startButton.addEventListener("click", function () {
 
     var listItem2 = document.createElement("li");
     questionList.appendChild(listItem2)
-    btn_b.textContent = "btn_b"
+    // btn_b.textContent = "btn_b"
     //Event listener is option b is selected
     btn_b.addEventListener("click", function () {
         submitButton.disabled = false;
@@ -172,7 +173,7 @@ startButton.addEventListener("click", function () {
 
     var listItem3 = document.createElement("li");
     questionList.appendChild(listItem3)
-    btn_c.textContent = "btn_c"
+    // btn_c.textContent = "btn_c"
     //Event listener is option C is selected
     btn_c.addEventListener("click", function () {
         submitButton.disabled = false;
@@ -182,7 +183,7 @@ startButton.addEventListener("click", function () {
 
     var listItem4 = document.createElement("li");
     questionList.appendChild(listItem4)
-    btn_d.textContent = "btn_d"
+    // btn_d.textContent = "btn_d"
     //Event listener is option D is selected
     btn_d.addEventListener("click", function () {
         submitButton.disabled = false;
@@ -191,7 +192,7 @@ startButton.addEventListener("click", function () {
     listItem4.appendChild(btn_d);
 
     setTime();
-    showNextQuestion(firstQ = true);
+    showNextQuestion();
 }
 )
 
