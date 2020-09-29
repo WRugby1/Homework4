@@ -17,6 +17,12 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 ```
+Extra features:
+- The original example showed that when the user clicked an answer, the quiz would move onto the next question. To accomodate for accidental clicks, or mind changes
+I have created a submit answer button that moves the quesiton forward. 
+- Disabled the submit answer button at the start of each question until an answer has been selected. This helps prevent the user from accidentally re-submitting the previously selected answer.
+- Added some bootstrap formatting
+
 
 ## Link to app
 
